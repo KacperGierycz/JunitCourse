@@ -5,16 +5,23 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class StringHelperTest {
+	
+	StringHelper helper =new StringHelper();
 
 	@Test
-	public void test() {
+	public void testTruncateAInFirst2Positions_AinFirstTwoPositions() {
 	//	fail("Not yet implemented");
-		StringHelper helper =new StringHelper();
+
 		//AACD => CD ACD => CD CDEF => CDEF CDAA =>CDAA
 		assertEquals("CD", helper.truncateAInFirst2Positions("AACD"));
-		assertEquals("CD",helper.truncateAInFirst2Positions("ACD"));
+
 		//expected,actual
 		
+	}
+	
+	@Test
+	public void testTruncateAInFirst2Positions_AinFirstPosition() {
+		assertEquals("CD",helper.truncateAInFirst2Positions("ACD"));
 	}
 
 }
