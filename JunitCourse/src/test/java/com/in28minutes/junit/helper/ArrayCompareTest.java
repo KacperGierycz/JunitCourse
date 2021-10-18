@@ -37,5 +37,31 @@ public class ArrayCompareTest {
 			//exception
 		}
 	}
+	
+	@Test(timeout = 1)
+	public void testSort_SortPerformance() {
+		int array[]= {12,23,4};
+		for(int i= 0;i<=100000;i++) {
+			array[0]=i;
+			Arrays.sort(array);
+		}
+	}
+	
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
