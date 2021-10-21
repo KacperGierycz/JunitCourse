@@ -17,7 +17,7 @@ public class StringHelperTest {
 		helper= new StringHelper();
 	}
 	
-
+ 
 
 	@Test
 	public void testTruncateAInFirst2Positions_AinFirstTwoPositions() {
